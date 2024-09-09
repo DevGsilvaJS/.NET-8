@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChatGS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49e2787653a334363bb42f53db8b0603961740a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChatGS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChatGS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

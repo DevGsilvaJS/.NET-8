@@ -2,11 +2,12 @@
 {
     public class PessoaModel
     {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public string SobreNome { get; set; }
-        public char Sexo { get; set; }
-      // public ICollection<UsuarioModel> Usuarios { get; set; }
+        public int? PESID { get; set; }
+        public string PESNOME { get; set; } = string.Empty;
+        public string PESSOBRENOME { get; set; } = string.Empty;
+        public int PESDOCFEDERAL { get; set; }
+        public int PESDOCESTADUAL { get; set; }
+        public DateTime PESDATACADASTRO { get; set; } = DateTime.Now;
 
     }
 }

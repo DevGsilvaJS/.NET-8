@@ -1,8 +1,7 @@
-﻿using ChatGS.Models;
-using ChatGS.Repositorios.Interfaces;
+﻿using ChatGS.DTO;
 using ChatGS.Servicos;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace ChatGS.Controllers
 {
@@ -17,10 +16,10 @@ namespace ChatGS.Controllers
             _usuarioService = usuarioService;
         }
 
-        //[HttpGet]
+        [HttpGet]
         //public async Task<IActionResult> GetAll()
         //{
-        //    var usuarios = await _usuarioService.GetAllAsync();
+        //    var usuarios = await _usuarioService.ListaUsuarios();
         //    return Ok(usuarios);
         //}
 
@@ -36,29 +35,34 @@ namespace ChatGS.Controllers
         //}
 
         [HttpPost]
-        public async Task<IActionResult> Create(UsuarioModel usuario)
+        public async Task<IActionResult> Create([FromBody] UsuarioDTO usuario)
         {
-            var createdUsuario = await _usuarioService.SaveEntitiesAsync(usuario);
+
+            var createdUsuario = await _usuarioService.GravarUsuario(usuario);
             return Ok(createdUsuario);
         }
 
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> Update(int id, UsuarioModel usuario)
-        //{
-        //    if (id != usuario.Id)
-        //    {
-        //        return BadRequest();
-        //    }
 
-        //    await _usuarioRepository.UpdateAsync(usuario);
-        //    return NoContent();
-        //}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletarUsuario(int id)
+        {
+            bool excluirUsuario = await _usuarioService.DeletarUsuario(id);
+            return Ok(excluirUsuario);
+        }
 
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    await _usuarioRepository.DeleteAsync(id);
-        //    return NoContent();
-        //}
+        [HttpGet("ListarUsuarios")]
+        public async Task<IActionResult> ListarUsuarios()
+        {
+            try
+            {
+                var usuarios = await _usuarioService.ListarUsuarios();
+                return Ok(usuarios);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (you might want to use a logging framework)
+                return StatusCode(500, "Erro interno do servidor.");
+            }
+        }
     }
 }
