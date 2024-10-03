@@ -81,6 +81,14 @@
               "target": "Package",
               "version": "[8.0.6, )"
             },
+            "Moq.AutoMock": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -88,6 +96,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[7.6.3, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
             }
           },
           "imports": [

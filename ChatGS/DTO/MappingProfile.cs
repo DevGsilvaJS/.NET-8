@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ChatGS.DTO;
-using ChatGS.Models;
+using ChatGS.Models.Users;
 
 public class MappingProfile : Profile
 {
@@ -9,8 +9,7 @@ public class MappingProfile : Profile
 
         CreateMap<PessoaModel, PessoaDTO>();
         CreateMap<PessoaDTO, PessoaModel>();
-        CreateMap<GrupoUsuarioModel, GrupoUsuariosDTO>();
-        CreateMap<GrupoUsuariosDTO, GrupoUsuarioModel>();
+
 
 
 
@@ -18,8 +17,7 @@ public class MappingProfile : Profile
         CreateMap<UsuarioDTO, UsuarioModel>()
             .ForMember(dest => dest.USULOGIN, opt => opt.MapFrom(src => src.NomeUsuario))
             .ForMember(dest => dest.USUSENHA, opt => opt.MapFrom(src => src.Senha))
-            .ForMember(dest => dest.Pessoa, opt => opt.MapFrom(src => src.Pessoa))
-            .ForMember(dest => dest.GrupoUsuarios, opt => opt.MapFrom(src => src.GrupoUsuarios));
+            .ForMember(dest => dest.Pessoa, opt => opt.MapFrom(src => src.Pessoa));
 
 
         CreateMap<PessoaDTO, PessoaModel>()

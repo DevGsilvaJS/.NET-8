@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Projetos\\Mensageria\\ChatGS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\services\\usuarioservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\services\\usuarioservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34A61749-80E7-4729-815E-5DF4FF273FB6}|TestProject\\TestProject.csproj|d:\\projetos\\mensageria\\chatgs\\testproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A61749-80E7-4729-815E-5DF4FF273FB6}|TestProject\\TestProject.csproj|solutionrelative:testproject\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\services\\transactions\\planocontasservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\services\\transactions\\planocontasservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\services\\baselista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\services\\baselista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\repository\\repositorygeneric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\repository\\repositorygeneric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\dto\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\dto\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|d:\\projetos\\mensageria\\chatgs\\chatgs\\controllers\\planocontascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95884DF6-E691-4461-8AC0-2A7283768EA5}|ChatGS\\ChatGS.csproj|solutionrelative:chatgs\\controllers\\planocontascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteModel.cs",
-              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Models\\ClienteModel.cs",
-              "RelativeDocumentMoniker": "ChatGS\\Models\\ClienteModel.cs",
-              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Models\\ClienteModel.cs",
-              "RelativeToolTip": "ChatGS\\Models\\ClienteModel.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAABUAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T00:20:50.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\DTO\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "ChatGS\\DTO\\MappingProfile.cs",
-              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\DTO\\MappingProfile.cs",
-              "RelativeToolTip": "ChatGS\\DTO\\MappingProfile.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T21:52:57.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioServices.cs",
-              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Services\\UsuarioServices.cs",
-              "RelativeDocumentMoniker": "ChatGS\\Services\\UsuarioServices.cs",
-              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Services\\UsuarioServices.cs",
-              "RelativeToolTip": "ChatGS\\Services\\UsuarioServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAL0AAAAAAAAA",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\TestProject\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TestProject\\UnitTest1.cs",
+              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\TestProject\\UnitTest1.cs",
+              "RelativeToolTip": "TestProject\\UnitTest1.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAswAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T20:00:19.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BaseLista.cs",
-              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Services\\BaseLista.cs",
-              "RelativeDocumentMoniker": "ChatGS\\Services\\BaseLista.cs",
-              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Services\\BaseLista.cs",
-              "RelativeToolTip": "ChatGS\\Services\\BaseLista.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAcwBcAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T19:42:38.374Z",
+              "WhenOpened": "2024-10-03T01:35:36.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "ChatGS\\Controllers\\UsuarioController.cs",
-              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "ChatGS\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAswCgAAABEAAAA",
+              "Title": "PlanoContasServices.cs",
+              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Services\\Transactions\\PlanoContasServices.cs",
+              "RelativeDocumentMoniker": "ChatGS\\Services\\Transactions\\PlanoContasServices.cs",
+              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Services\\Transactions\\PlanoContasServices.cs",
+              "RelativeToolTip": "ChatGS\\Services\\Transactions\\PlanoContasServices.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAADwvzwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T19:40:15.7Z",
+              "WhenOpened": "2024-10-03T01:19:32.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RepositoryGeneric.cs",
+              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Repository\\RepositoryGeneric.cs",
+              "RelativeDocumentMoniker": "ChatGS\\Repository\\RepositoryGeneric.cs",
+              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Repository\\RepositoryGeneric.cs",
+              "RelativeToolTip": "ChatGS\\Repository\\RepositoryGeneric.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwFsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:02:55.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Program.cs",
+              "RelativeDocumentMoniker": "ChatGS\\Program.cs",
+              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Program.cs",
+              "RelativeToolTip": "ChatGS\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAswBQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:03:39.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlanoContasController.cs",
+              "DocumentMoniker": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Controllers\\PlanoContasController.cs",
+              "RelativeDocumentMoniker": "ChatGS\\Controllers\\PlanoContasController.cs",
+              "ToolTip": "D:\\Projetos\\Mensageria\\ChatGS\\ChatGS\\Controllers\\PlanoContasController.cs",
+              "RelativeToolTip": "ChatGS\\Controllers\\PlanoContasController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:01:19.979Z",
               "EditorCaption": ""
             }
           ]

@@ -1,11 +1,17 @@
-using ChatGS.Data;
-using ChatGS.Servicos;
+using ChatGS.Interfaces;
+using ChatGS.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
+using System.Data; // Não se esqueça de incluir esta linha
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.Data.SqlClient;
+using ChatGS.Models.Users;
+using ChatGS.Services.Users;
+using ChatGS.Models.Transactions;
+using ChatGS.Services.Transactions; // Certifique-se de que isso está aqui
 
 namespace ChatGS
 {
@@ -15,23 +21,41 @@ namespace ChatGS
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Gerando a chave JWT segura
-            var key = new byte[32]; // Tamanho mínimo de 256 bits (32 bytes)
+            var key = new byte[32];
             using (var rng = RandomNumberGenerator.Create())
             {
                 rng.GetBytes(key);
             }
             var base64Key = Convert.ToBase64String(key);
 
-            // Configuração do DbContext
-            builder.Services.AddEntityFrameworkSqlServer()
-                .AddDbContext<ChatGSDbContext>(options =>
-                    options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
+            // Configuração do IDbConnection
+            builder.Services.AddScoped<IDbConnection>(db =>
+                new SqlConnection(builder.Configuration.GetConnectionString("DataBase")));
 
+
+            // Configuração do CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:5173") // URL do frontend
+                               .AllowAnyHeader()
+                               .AllowAnyMethod();
+                    });
+            });
 
             builder.Services.AddAutoMapper(typeof(MappingProfile));
-            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            // Registro do repositório genérico
+            builder.Services.AddScoped(typeof(IRepositoryGeneric<>), typeof(RepositoryGeneric<>));
+            builder.Services.AddScoped<IRepositoryGeneric<UsuarioModel>, RepositoryGeneric<UsuarioModel>>();
+            builder.Services.AddScoped<IRepositoryGeneric<PessoaModel>, RepositoryGeneric<PessoaModel>>();
+            builder.Services.AddScoped<IRepositoryGeneric<PlanoContasModel>, RepositoryGeneric<PlanoContasModel>>();
+            builder.Services.AddScoped<UsuarioService>();
+            builder.Services.AddScoped<PlanoContasServices>();
 
+
+            // Configuração da autenticação JWT
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -41,18 +65,13 @@ namespace ChatGS
             {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = "https://localhost:7000/",
-                    ValidAudience = "ChatGSApp",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(base64Key)) // Corrigido para usar base64Key decodificado
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
                 };
             });
-
-            // Registro do serviço de usuário
-            builder.Services.AddTransient<UsuarioService>();
 
             // Outros serviços
             builder.Services.AddControllers();
@@ -68,10 +87,11 @@ namespace ChatGS
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
-            app.UseAuthentication(); // Adicione esta linha para usar autenticação
-            app.UseAuthorization();
+            app.UseCors("AllowSpecificOrigin");
 
+            app.UseHttpsRedirection();
+            app.UseAuthentication(); // Adicionando autenticação ao pipeline
+            app.UseAuthorization();
             app.MapControllers();
 
             app.Run();

@@ -9,6 +9,7 @@ D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\AutoMapper.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Azure.Core.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Azure.Identity.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Castle.Core.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Dapper.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Humanizer.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -36,6 +37,9 @@ D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Moq.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Moq.AutoMock.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\NonBlocking.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -53,6 +57,10 @@ D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\xunit.abstractions.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\xunit.assert.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\xunit.core.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\xunit.execution.dotnet.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -139,3 +147,4 @@ D:\Projetos\Mensageria\ChatGS\ChatGS\obj\Debug\net8.0\refint\ChatGS.dll
 D:\Projetos\Mensageria\ChatGS\ChatGS\obj\Debug\net8.0\ChatGS.pdb
 D:\Projetos\Mensageria\ChatGS\ChatGS\obj\Debug\net8.0\ChatGS.genruntimeconfig.cache
 D:\Projetos\Mensageria\ChatGS\ChatGS\obj\Debug\net8.0\ref\ChatGS.dll
+D:\Projetos\Mensageria\ChatGS\ChatGS\bin\Debug\net8.0\Newtonsoft.Json.dll

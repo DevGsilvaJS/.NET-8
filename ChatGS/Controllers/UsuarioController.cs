@@ -1,5 +1,5 @@
 ﻿using ChatGS.DTO;
-using ChatGS.Servicos;
+using ChatGS.Services.Users;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -23,19 +23,19 @@ namespace ChatGS.Controllers
         //    return Ok(usuarios);
         //}
 
-        //[HttpGet("{id}")]
-        //public async Task<IActionResult> GetById(int id)
-        //{
-        //    var usuario = await _usuarioService.GetByIdAsync(id);
-        //    if (usuario == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return Ok(usuario);
-        //}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetUsuarioById(int id)
+        {
+            var usuario = await _usuarioService.GetById(id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+            return Ok(usuario);
+        }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] UsuarioDTO usuario)
+        public async Task<IActionResult> CreateUsuario(UsuarioDTO usuario)
         {
 
             var createdUsuario = await _usuarioService.GravarUsuario(usuario);
@@ -44,9 +44,9 @@ namespace ChatGS.Controllers
 
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletarUsuario(int id)
+        public async Task<IActionResult> DeleteUsuario(int id)
         {
-            bool excluirUsuario = await _usuarioService.DeletarUsuario(id);
+            bool excluirUsuario = await _usuarioService.DeleteUsuario(id);
             return Ok(excluirUsuario);
         }
 
@@ -55,7 +55,7 @@ namespace ChatGS.Controllers
         {
             try
             {
-                var usuarios = await _usuarioService.ListarUsuarios();
+                var usuarios = await _usuarioService.ListAll();
                 return Ok(usuarios);
             }
             catch (Exception ex)
@@ -64,5 +64,31 @@ namespace ChatGS.Controllers
                 return StatusCode(500, "Erro interno do servidor.");
             }
         }
+
+        //[HttpGet("{id}")]
+        //public async Task<IActionResult> BuscaUsuarioPorID(int id)
+        //{
+        //    var excluirUsuario = await _usuarioService.BuscaUsuarioPorID(id);
+        //    return Ok(excluirUsuario);
+        //}
+
+        //[HttpPost("autenticacao")]
+        //public async Task<IActionResult> Autenticacao(string email, string senha)
+        //{
+        //    // Verifica se o usuário e senha são válidos
+        //    bool autenticado = await _usuarioService.Autenticacao(email, senha);
+
+        //    if (autenticado)
+        //    {
+        //        // Retorna OK se autenticado
+        //        return Ok(new { mensagem = "Usuário autenticado com sucesso." });
+        //    }
+        //    else
+        //    {
+        //        // Retorna Unauthorized se não autenticado
+        //        return Unauthorized(new { mensagem = "Usuário ou senha inválidos." });
+        //    }
+        //}
     }
 }
+
